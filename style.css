@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass:wght@400;700&display=swap");
+:root {
+    --Orange: hsl(25, 97%, 53%); 
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%); 
+    --secondary: hsl(213deg, 20%, 22%);
+}
+
+.hidden{
+    display: none;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+body{
+    background-color: var(--Very-Dark-Blue);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    background-color: var(--Dark-Blue);
+    width: 350px;
+    border-radius: 5%;
+    padding: 16px;
+}
+.explica{
+    color: rgb(104, 101, 101);
+}
+.titulo{
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.explica{
+    color: var(--Medium-Grey);
+    margin-bottom: 1em;
+}
+.estrela{
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    height: 5vh;
+    width: 5vh;
+    color: rgb(97, 91, 91);
+}
+.notas{
+    margin-bottom: 1em;
+}
+.bola{
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    height: 40px;
+    width: 40px;
+    color: rgb(97, 91, 91);
+}
+.bola:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+.notas{
+    margin-top: 0.6em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.submit{
+    margin-top: 1em;
+    color: var(--White);
+    border: none;
+    padding: 0.7rem;
+    transition: all 0.3s;
+    border-radius: 2em;
+    background-color: var(--Orange);
+    width: 100%;
+}
+.submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+
+
+.thanks{
+    text-align: center;
+}
+
+.select{
+    background-color: var(--Orange) !important;
+    color: var(--White)!important;
+}
